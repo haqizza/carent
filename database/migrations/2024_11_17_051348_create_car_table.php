@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('number_plate')->unique();
             $table->string('model');
-            $table->string('trade_mark');
+            $table->string('trademark');
             $table->integer('production_year');
             $table->integer('rent_price');
             $table->boolean('available');

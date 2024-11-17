@@ -17,9 +17,9 @@ defineProps({
 });
 
 const form = useForm({
-    email: '',
-    password: '',
-    remember: false,
+    email: 'admin@carent.com',
+    password: '1234qwer',
+    remember: true,
 });
 
 const submit = () => {

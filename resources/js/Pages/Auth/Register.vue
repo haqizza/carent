@@ -9,6 +9,7 @@ import AreaTextInput from '@/Components/AreaTextInput.vue';
 
 const form = useForm({
     name: '',
+    role: 'user',
     driver_license: '',
     phone: '',
     address: '',

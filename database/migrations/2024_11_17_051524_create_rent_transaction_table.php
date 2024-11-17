@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('customer');
             $table->string('car');
             $table->date('rent_date');
-            $table->date('return_date');
+            $table->date('return_date')->nullable();
+            $table->integer('is_return')->default(0);
             $table->timestamps();
         });
     }
