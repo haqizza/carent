@@ -1,6 +1,12 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
+defineProps({
+    placeholder: {
+        type: String,
+    },
+});
+
 const model = defineModel({
     type: String,
     required: true,
@@ -21,6 +27,7 @@ defineExpose({ focus: () => input.value.focus() });
     <input
         class="rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
         v-model="model"
+        :placeholder="placeholder"
         ref="input"
     />
 </template>

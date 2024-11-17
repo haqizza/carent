@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('driver_license_number')->unique();
             $table->string('name');
-            $table->date('phone');
+            $table->string('phone');
             $table->text('address');
             $table->timestamps();
         });

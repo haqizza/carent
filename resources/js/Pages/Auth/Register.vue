@@ -37,6 +37,7 @@ const submit = () => {
                     type="text"
                     class="mt-1 block w-full"
                     v-model="form.name"
+                    placeholder="Your Name"
                     required
                     autofocus
                     autocomplete="name"
@@ -57,11 +58,31 @@ const submit = () => {
                     type="text"
                     class="mt-1 block w-full"
                     v-model="form.driver_license"
+                    placeholder="000000"
                     required
                     autocomplete="driver_license"
                 />
 
                 <InputError class="mt-2" :message="form.errors.driver_license" />
+            </div>
+
+            <div class="mt-4">
+                <InputLabel
+                    for="phone"
+                    value="Phone Number"
+                />
+
+                <TextInput
+                    id="phone"
+                    type="text"
+                    class="mt-1 block w-full"
+                    v-model="form.phone"
+                    placeholder="081XXXXXX"
+                    required
+                    autocomplete="phone"
+                />
+
+                <InputError class="mt-2" :message="form.errors.phone" />
             </div>
 
             <div class="mt-4">
@@ -75,6 +96,7 @@ const submit = () => {
                     type="text"
                     class="mt-1 block w-full"
                     v-model="form.address"
+                    placeholder="Your Address"
                     required
                     autocomplete="address"
                 />
@@ -90,6 +112,7 @@ const submit = () => {
                     type="email"
                     class="mt-1 block w-full"
                     v-model="form.email"
+                    placeholder="name@mail.com"
                     required
                     autocomplete="username"
                 />

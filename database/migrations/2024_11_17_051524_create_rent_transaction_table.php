@@ -18,9 +18,6 @@ return new class extends Migration
             $table->date('rent_date');
             $table->date('return_date');
             $table->timestamps();
-
-            $table->foreign('customer')->references('driver_license_number')->on('customer');
-            $table->foreign('car')->references('number_plate')->on('car');
         });
     }
 
